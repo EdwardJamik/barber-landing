@@ -7,7 +7,7 @@
   <title>Tattoo</title>
   <link rel="stylesheet" href="assets/styles/style.css">
   <script src="./assets/scripts/jquery.min.js"></script>
-  <script src="./assets/scripts/slick/slick.min.js"></script>
+  <script src="./assets/scripts/slick/slick.min.js" defer></script>
   <link href="./assets/scripts/slick/slick-theme.min.css" rel="stylesheet">
   <link href="./assets/scripts/slick/slick.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -268,19 +268,19 @@
         <p class="pre-title">результати учнів</p>
         <div class="result-slider">
           <div class="item-slider">
-            <video src="./assets/image/video-1.mp4" class="video" preload="metadata"></video>
+            <video src="./assets/image/video-1.mp4" playsinline preload="none" class="video" preload="metadata"></video>
             <button class="play-btn"></button>
           </div>
           <div class="item-slider">
-            <video src="./assets/image/video-2.mp4" class="video" preload="metadata"></video>
+            <video src="./assets/image/video-2.mp4" playsinline preload="none" class="video" preload="metadata"></video>
             <button class="play-btn"></button>
           </div>
           <div class="item-slider">
-            <video src="./assets/image/video-3.mp4" class="video" preload="metadata"></video>
+            <video src="./assets/image/video-3.mp4" playsinline preload="none" class="video" preload="metadata"></video>
             <button class="play-btn"></button>
           </div>
           <div class="item-slider">
-            <video src="./assets/image/video-4.mp4" class="video" preload="metadata"></video>
+            <video src="./assets/image/video-4.mp4" playsinline preload="none" class="video" preload="metadata"></video>
             <button class="play-btn"></button>
           </div>
         </div>
@@ -355,8 +355,15 @@
     </section>
 
   </main>
-  <script src="./assets/scripts/telegram-web-app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    if (window.Telegram) {
+      const s = document.createElement('script')
+      s.src = './assets/scripts/telegram-web-app.js'
+      document.body.appendChild(s)
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
   <script>
     document.querySelectorAll('.anim-1, .anim-2').forEach(el => {
       el.innerHTML = el.innerHTML + el.innerHTML
@@ -490,20 +497,19 @@
         centerMode: true,
       })
 
-      $(document).ready(function () {
-        const $slider = $('.results .result-slider')
+      const $slider = $('.results .result-slider')
 
-        $slider.slick({
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-          dots: false,
-          variableWidth: true,
-          pauseOnHover: true,
-          centerMode: true,
-        })
+      $slider.slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        variableWidth: true,
+        pauseOnHover: true,
+        centerMode: true,
       })
+
     })
 
   </script>
