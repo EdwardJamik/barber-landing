@@ -5,12 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Tattoo</title>
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <script src="./assets/scripts/jquery.min.js"></script>
+
+  <link rel="preload" href="./assets/styles/style.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./assets/styles/style.min.css">
+  </noscript>
+
+  <link rel="preload" href="./assets/scripts/slick/slick.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="./assets/scripts/slick/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" as="style"
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./assets/scripts/slick/slick.min.css">
+    <link rel="stylesheet" href="./assets/scripts/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  </noscript>
+
+  <script src="./assets/scripts/jquery.min.js" defer></script>
   <script src="./assets/scripts/slick/slick.min.js" defer></script>
-  <link href="./assets/scripts/slick/slick-theme.min.css" rel="stylesheet">
-  <link href="./assets/scripts/slick/slick.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- <script src="./assets/scripts/jquery.min.js"></script>
+  <script src="./assets/scripts/slick/slick.min.js" defer></script> -->
+  <!-- <link href="./assets/scripts/slick/slick-theme.min.css" rel="stylesheet">
+  <link href="./assets/scripts/slick/slick.min.css" rel="stylesheet"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
+
   <!-- <meta property="og:title" content="Навчання тату у стилі Fine Line — VECHNAYA TATTOO">
   <meta property="og:image" content="https://vechnayatattoo.com.ua/assets/image/preview.jpg">
   <meta property="og:description" content="Онлайн-курси та майстер-класи від Тані Борозенець — топ тату-майстра у стилі fine line.
