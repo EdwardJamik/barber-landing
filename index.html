@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Tattoo</title>
+  <title>Barber</title>
 
-  <link rel="stylesheet" href="./assets/styles/style.css">
-
-  <!-- Slick -->
-  <link rel="stylesheet" href="./assets/scripts/slick/slick.min.css">
-  <link rel="stylesheet" href="./assets/scripts/slick/slick-theme.min.css">
-
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-
-  <!-- JS defer -->
+  <link rel="stylesheet" href="assets/styles/style.css">
   <script src="./assets/scripts/jquery.min.js"></script>
   <script src="./assets/scripts/slick/slick.min.js"></script>
+  <link href="./assets/scripts/slick/slick-theme.min.css" rel="stylesheet">
+  <link href="./assets/scripts/slick/slick.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <!-- <meta property="og:title" content="Навчання тату у стилі Fine Line — VECHNAYA TATTOO">
   <meta property="og:image" content="https://vechnayatattoo.com.ua/assets/image/preview.jpg">
@@ -280,22 +274,22 @@
         <div class="result-slider">
           <div class="item-slider">
             <video src="./assets/image/video-1.mp4" poster="./assets/image/poster-1.jpg" playsinline preload="none"
-              class="video" preload="metadata"></video>
+              class="video"></video>
             <button class="play-btn"></button>
           </div>
           <div class="item-slider">
             <video src="./assets/image/video-2.mp4" poster="./assets/image/poster-2.jpg" playsinline preload="none"
-              class="video" preload="metadata"></video>
+              class="video"></video>
             <button class="play-btn"></button>
           </div>
           <div class="item-slider">
             <video src="./assets/image/video-3.mp4" poster="./assets/image/poster-3.jpg" playsinline preload="none"
-              class="video" preload="metadata"></video>
+              class="video"></video>
             <button class="play-btn"></button>
           </div>
           <div class="item-slider">
             <video src="./assets/image/video-4.mp4" poster="./assets/image/poster-4.jpg" playsinline preload="none"
-              class="video" preload="metadata"></video>
+              class="video"></video>
             <button class="play-btn"></button>
           </div>
         </div>
@@ -375,7 +369,7 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script defer>
     document.querySelectorAll('.anim-1, .anim-2').forEach(el => {
-      el.innerHTML = el.innerHTML + el.innerHTML
+      el.insertAdjacentHTML('beforeend', el.innerHTML)
     });
   </script>
 
