@@ -1,0 +1,31 @@
+<svg width="390" height="732" viewBox="0 0 390 732" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_n_137_1322)">
+<rect width="390" height="482" rx="32" fill="#F2F2F2"/>
+</g>
+<g style="mix-blend-mode:plus-darker" filter="url(#filter1_f_137_1322)">
+<path d="M296.054 481.467C296.054 454.666 285.407 428.963 266.456 410.012C247.505 391.06 221.801 380.414 195 380.414C168.199 380.414 142.496 391.06 123.544 410.012C104.593 428.963 93.9463 454.666 93.9463 481.467L296.054 481.467Z" fill="#FABA16"/>
+</g>
+<defs>
+<filter id="filter0_n_137_1322" x="0" y="0" width="390" height="482" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="2 2" stitchTiles="stitch" numOctaves="3" result="noise" seed="4881" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(0, 0, 0, 0.04)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect1_noise_137_1322">
+<feMergeNode in="shape" />
+<feMergeNode in="color1" />
+</feMerge>
+</filter>
+<filter id="filter1_f_137_1322" x="-156.054" y="130.414" width="702.108" height="601.054" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_137_1322"/>
+</filter>
+</defs>
+</svg>
