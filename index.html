@@ -196,16 +196,16 @@
           <li>
             <div class="package-2">
               <div class="content">
-                <h4 class="title">КОМБО</h4>
-                <p class="lesson">2 УРОКИ:</p>
-                <p class="description">завивка та фарбування</p>
+                <h4 class="title">FULL-ПАКЕТ</h4>
+                <p class="lesson">3 УРОКИ + КОНСУЛЬТАЦІЯ:</p>
+                <p class="description">завивка, фарбування та контент + персональна стратегія розвитку by PRIMERO</p>
                 <p class="title-price">вартість:</p>
                 <div class="price">
-                  <div class="old">$298</div>
-                  <div class="actual">$258</div>
+                  <div class="old">$697</div>
+                  <div class="actual">$397</div>
                 </div>
                 <p class="economi">
-                  *Економія $40
+                  *онлайн-консультація з В’ячеславом
                 </p>
               </div>
             </div>
@@ -251,8 +251,8 @@
 
             <div class="option">
               <button>2000-4000 грн</button>
+              <button>4000-6000 грн</button>
               <button>6000-8000 грн</button>
-              <button>2000-4000 грн</button>
               <button>8000+ грн</button>
             </div>
           </div>
@@ -375,7 +375,7 @@
     });
   </script>
 
-  <script defer>
+  <script>
     document.addEventListener("DOMContentLoaded", () => {
 
       const ranges = {
@@ -393,6 +393,7 @@
         },
         price: {
           "2000-4000 грн": [2000, 4000],
+          "4000-6000 грн": [4000, 6000],
           "6000-8000 грн": [6000, 8000],
           "8000+ грн": [8000, 8000 * 1.1],
         },
@@ -415,8 +416,8 @@
         const Monthly_min = Clients_min * Price_min * 4
         const Monthly_max = Clients_max * Price_max * 4
 
-        const Pct_min = ((Monthly_min / Income_max) * 100).toFixed(1)
-        const Pct_max = ((Monthly_max / Income_min) * 100).toFixed(1)
+        const Pct_min = ((Monthly_min / Income_max) * 100).toFixed(0)
+        const Pct_max = ((Monthly_max / Income_min) * 100).toFixed(0)
 
         const Year_min = Monthly_min * 12
         const Year_max = Monthly_max * 12
