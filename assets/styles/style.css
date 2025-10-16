@@ -1344,6 +1344,8 @@ main {
   z-index: 1;
   border-radius: 8px;
   bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 .question .container .person-img .bg::before {
   content: " ";
