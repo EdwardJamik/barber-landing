@@ -12,8 +12,6 @@
 html,
 body {
   overflow-x: hidden;
-  touch-action: manipulation; /* вимикає pinch-zoom на деяких браузерах */
-  overscroll-behavior: none; /* блокує “пружність” при скролі */
 }
 
 body {

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap");
 *,
 *:before,
@@ -176,8 +175,6 @@ label {
 html,
 body {
   overflow-x: hidden;
-  touch-action: manipulation; /* вимикає pinch-zoom на деяких браузерах */
-  overscroll-behavior: none; /* блокує “пружність” при скролі */
 }
 
 body {
