@@ -971,9 +971,11 @@ main {
   margin-bottom: 8px;
 }
 .calculation .container .calculator-form .block-calc .option {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
   justify-content: center;
 }
 .calculation .container .calculator-form .block-calc .option button {
