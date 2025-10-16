@@ -315,10 +315,10 @@ main {
   padding: 34px 16px 12px;
   min-height: 482px;
   width: 100%;
-  background-image: url("../image/bg-blocks.svg");
+  background-image: url("../image/bg-blocks.png");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .trends .container .title {
   display: flex;
@@ -378,6 +378,11 @@ main {
   flex-direction: column;
   max-width: 230px;
   width: 230px;
+}
+@media screen and (max-width: 390px) {
+  .trends .container .block-content .left-side {
+    width: 213px;
+  }
 }
 .trends .container .block-content .left-side p {
   font-family: Manrope;
