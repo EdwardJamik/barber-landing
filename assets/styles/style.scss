@@ -183,6 +183,17 @@ main {
       gap: 24px;
       margin: 0 auto;
 
+      & b {
+        font-family: Unbounded;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 24px;
+        line-height: 114.9%;
+        text-align: center;
+        vertical-align: middle;
+        animation: blik 2s linear infinite;
+      }
+
       & > span {
         font-family: Unbounded;
         font-weight: 300;
@@ -663,6 +674,9 @@ main {
           width: 358px;
           height: 410px;
           margin: 0 auto 16px;
+          animation: shake 3s ease-in-out infinite;
+
+          transform-origin: bottom center;
 
           & > div.content {
             position: relative;
@@ -839,6 +853,7 @@ main {
             max-width: 358px;
             width: 100%;
             height: 410px;
+            animation: shake-2 3s ease-in-out infinite;
 
             & .title-price {
               color: #c0b28d;
@@ -1301,6 +1316,10 @@ main {
     padding-top: 56px;
 
     & .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       font-family: Unbounded;
       font-weight: 600;
       font-style: SemiBold;
@@ -1310,6 +1329,17 @@ main {
       vertical-align: middle;
       color: #f2f2f2;
       padding-bottom: 16px;
+
+      & span {
+        animation: blik 1.8s linear infinite;
+        font-family: Unbounded;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 28px;
+        letter-spacing: -4px;
+        text-align: center;
+        vertical-align: middle;
+      }
     }
 
     & .pre-title {
@@ -1379,5 +1409,75 @@ main {
       top: -32px;
       z-index: 2;
     }
+  }
+}
+
+@keyframes blik {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  2% {
+    transform: rotate(0.5deg);
+  }
+  4% {
+    transform: rotate(-0.5deg);
+  }
+  6% {
+    transform: rotate(0.4deg);
+  }
+  8% {
+    transform: rotate(-0.4deg);
+  }
+  10% {
+    transform: rotate(0.2deg);
+  }
+  12% {
+    transform: rotate(-0.2deg);
+  }
+  14%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake-2 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  2% {
+    transform: rotate(0.6deg);
+  }
+  4% {
+    transform: rotate(-0.6deg);
+  }
+  6% {
+    transform: rotate(0.5deg);
+  }
+  8% {
+    transform: rotate(-0.5deg);
+  }
+  10% {
+    transform: rotate(0.3deg);
+  }
+  12% {
+    transform: rotate(-0.3deg);
+  }
+  15%,
+  100% {
+    transform: rotate(0deg);
   }
 }
