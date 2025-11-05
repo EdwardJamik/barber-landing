@@ -627,6 +627,7 @@ main {
   position: relative;
   padding-bottom: 32px;
   margin-bottom: 32px;
+  min-height: 202.4px;
 }
 .learning .container .slider-list .slide .top-side .list::before {
   content: " ";
