@@ -46,21 +46,14 @@
       <div class="container">
         <h4 class="title">трендові техніки, <span class="line">які збільшать <b>твій</b> дохід</span> <span
             class="bold">на 30%
-            (і більше)<br />вже
+            (і більше) вже<br />
             за місяць</span></h4>
+        <p>Освой найприбутковіші послуги<br /> i стань <b>топ-майстром</b> у своєму місті</p>
 
         <div class="block-content">
-          <div class="left-side">
-            <p>Освой<br /> найприбутковіші послуги<br /> i стань <b>топ-майстром</b><br /> у своєму місті</p>
-            <div class="list-img">
-              <img class="img-2" src="./assets/image/blocks-img-2.png" alt="Blocks after" />
-              <img class="img-3" src="./assets/image/blocks-img-3.png" alt="Blocks after" />
-            </div>
-
-          </div>
-          <div class="right-side">
-            <img class="img-1" src="./assets/image/blocks-img-1.png" alt="Blocks after" />
-          </div>
+          <img class="img-2" src="./assets/image/slide-1.png" alt="Blocks after" /> <img class="img-2"
+            src="./assets/image/slide-2.jpg" alt="Blocks after" /> <img class="img-2" src="./assets/image/slide-3.jpg"
+            alt="Blocks after" />
         </div>
       </div>
     </section>
@@ -148,7 +141,40 @@
 
           </div>
 
-          <div class="slide slide-3">
+          <div class="slide slide-4">
+            <div class="top-side">
+              <div class="category">ВІДЕОУРОК</div>
+              <h4 class="title">подовжена стрижка</h4>
+
+              <ul class="list">
+                <li>ТЕХНІКА: ТЕКСТУРНИЙ OVERGROWN </li>
+                <li>Детальна демонстрація техніки від В'ячеслава</li>
+                <li>Підбір інструментів</li>
+              </ul>
+
+              <div class="price">
+                <div class="title">вартість:</div>
+                <span>$179</span>
+              </div>
+
+              <p class="avg-price">
+                *Середня ціна послуги: 3000-10000 грн
+              </p>
+
+              <a href="https://secure.wayforpay.com/button/b3895f53e1009" target="_blank" class="button gold">отримати
+                доступ</a>
+              <a href="#calculation" class="button silver">як збільшиться мій дохід</a>
+            </div>
+            <div class="bottom-side">
+              <div class="bonus-title">
+                БОНУС <br />від PRIMERO:
+              </div>
+              <p class="bonus-text"><b>Міні-лекція</b>: зйомка ефектного контент для просування нових послуг</p>
+            </div>
+
+          </div>
+
+          <!-- <div class="slide slide-3">
             <div class="top-side">
               <div class="category">ВІДЕОУРОК</div>
               <h4 class="title">контент, що приводить клієнтів</h4>
@@ -161,13 +187,14 @@
 
               <div class="price">
                 <div class="title">вартість:</div>
-                <span>$99</span>
+                <span>$109</span>
               </div>
-
+              <a href="https://secure.wayforpay.com/button/b0553f60cc389" target="_blank" class="button gold">отримати
+                доступ</a>
               <img src="./assets/image/social-img.png" alt="Social" />
 
             </div>
-          </div>
+          </div> -->
         </div>
     </section>
 
@@ -547,9 +574,6 @@
         }, 100)
       })
 
-
-
-
       const $slider = $('.results .result-slider')
 
       $slider.slick({
@@ -562,6 +586,25 @@
         pauseOnHover: true,
         centerMode: true,
       })
+
+      const $topSlider = $('.trends .block-content')
+
+      $topSlider.slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        variableWidth: true,
+        pauseOnHover: false,
+        centerMode: false,
+
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true
+      })
+
+
     })
 
   </script>

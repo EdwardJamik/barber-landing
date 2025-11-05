@@ -137,7 +137,7 @@ main {
         position: absolute;
         top: -14px;
         left: 10px;
-        background-image: url("../image/pretitle-icon.png");
+        background-image: url("../image/pretitle-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
         width: 332px;
@@ -199,7 +199,7 @@ main {
 .trends {
   padding: 42px 0 60px;
   & .container {
-    padding: 34px 16px 12px;
+    padding: 34px 0 40px;
     min-height: 482px;
     width: 100%;
     background-image: url("../image/bg-blocks.png");
@@ -222,6 +222,7 @@ main {
       color: #0d0401;
       gap: 24px;
       margin: 0 auto;
+      padding: 0 16px;
 
       & b {
         font-family: Unbounded;
@@ -251,7 +252,7 @@ main {
             content: " ";
             display: block;
             position: absolute;
-            background-image: url(../image/blocks-icon.png);
+            background-image: url(../image/blocks-icon.svg);
             background-repeat: no-repeat;
             background-position: bottom;
             background-size: cover;
@@ -263,76 +264,50 @@ main {
         }
 
         &.bold {
-          font-family: Unbounded;
+          font-family: "Unbounded";
           font-weight: 600;
-          font-style: SemiBold;
-          padding-bottom: 30px;
+          padding-bottom: 24px;
         }
+      }
+    }
+
+    & p {
+      padding: 0 16px;
+      font-family: "Manrope";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0;
+      color: #0d0401;
+      grid-area: 1 / 1 / 2 / 3;
+      padding-bottom: 56px;
+      text-align: center;
+      & b {
+        font-family: Manrope;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: bottom;
       }
     }
 
     & .block-content {
       display: flex;
       justify-content: space-between;
+      gap: 8px;
+      padding-left: 16px;
 
-      & .left-side {
-        display: flex;
-        flex-direction: column;
-        max-width: 230px;
-        width: 230px;
-
-        @media screen and (max-width: 390px) {
-          width: 213px;
-        }
-
-        & p {
-          font-family: Manrope;
-          font-weight: 400;
-          font-style: Regular;
-          font-size: 16px;
-          line-height: 140%;
-          letter-spacing: 0%;
-          vertical-align: bottom;
-          color: #0d0401;
-          grid-area: 1 / 1 / 2 / 3;
-          padding-bottom: 32px;
-
-          & b {
-            font-family: Manrope;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 16px;
-            line-height: 140%;
-            letter-spacing: 0%;
-            vertical-align: bottom;
-          }
-        }
-
-        & .list-img {
-          display: flex;
-          max-width: 230px;
-          width: 230px;
-          max-height: 130px;
-
-          & img {
-            width: 100%;
-            &.img-2 {
-              max-width: 100px;
-              margin-right: 8px;
-            }
-
-            &.img-3 {
-              max-width: 80px;
-            }
-          }
-        }
-      }
-
-      & .right-side {
-        max-width: 130px;
-        & .img-1 {
-          max-width: 130px;
-        }
+      & img {
+        max-width: 174px;
+        min-width: 174px;
+        width: 100%;
+        height: 260px;
+        border-radius: 16px;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 8px;
       }
     }
   }
@@ -618,7 +593,7 @@ main {
               position: absolute;
               width: 292px;
               height: 68px;
-              background-image: url(../image/price-icon.png);
+              background-image: url(../image/price-icon.svg);
               background-repeat: no-repeat;
               background-size: contain;
               background-position: bottom;
@@ -1231,7 +1206,7 @@ main {
         position: absolute;
         width: 362px;
         height: 68px;
-        background-image: url(../image/popular-icon.png);
+        background-image: url(../image/popular-icon.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
